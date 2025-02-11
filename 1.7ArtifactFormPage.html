@@ -1,0 +1,41 @@
+<!-- interactive.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page</title>
+</head>
+<body>
+    <h1>Welcome to the Interactive Page</h1>
+    <p>Please fill out the form below:</p>
+    
+    <form action="1.7ArtifactInfoPage.html" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        
+        <label for="color">Favorite Color:</label>
+        <select id="color" name="color">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select><br><br>
+        
+        <p>Choose your favorite pet:</p>
+        <input type="radio" id="dog" name="pet" value="dog">
+        <label for="dog">Dog</label>
+        <input type="radio" id="cat" name="pet" value="cat">
+        <label for="cat">Cat</label>
+        <input type="radio" id="bird" name="pet" value="bird">
+        <label for="bird">Bird</label><br><br>
+        
+        <label for="why">Why is that your favorite pet:</label>
+        <textarea id="why" name="why" placeholder="Enter your thoughts..."></textarea><br><br>
+        
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
