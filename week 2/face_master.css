@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+}
+
+.lefteye{
+    margin: 50px;
+    padding: 30px;
+    width:100px;
+    height:100px ;
+    background-color: white;
+}
+
+    .leftpupil{
+        width:60px;
+        height: 60px;
+        background-color: black; 
+    }
+
+.righteye{
+    padding: 30px;
+    position: absolute;
+    top: 50px;
+    left:230px;
+    width:100px;
+    height:100px ;
+    background-color: white;
+}
+
+    .rightpupil{
+        width:60px;
+        height: 60px;
+        background-color: black; 
+    }
+
+.mouth{
+    position: absolute;
+    top: 245px;
+    left:50px;
+    width: 370px;
+    height: 270px;
+    background-color: black;
+
+    .tooth{
+        position: absolute;
+        width:40px;
+        height: 40px;
+        background-color: white; 
+    }
+    #tooth1{
+        position: absolute;
+        top: 40px;
+        left: 10px;
+        }
+     #tooth2{
+        position: absolute;
+        top: 40px;
+        left: 60px;
+        }
+     #tooth3{
+        position: absolute;
+        top: 40px;
+        left: 110px;
+        }
+    #tooth4{
+        position: absolute;
+        top: 40px;
+        left: 160px;
+        }
+    #tooth5{
+        position: absolute;
+        top: 40px;
+        left: 210px;
+        }
+    #tooth6{
+        position: absolute;
+        top: 40px;
+        left: 260px;
+        }
+    #tooth7{
+        position: absolute;
+        top: 40px;
+        left: 310px;
+        }
+
+    .tongue{
+        margin: auto;
+        position: relative;
+        top: 160px;
+        width: 150px;
+        height: 100px;
+        background-color: red;
+    }
+
+    #tongueSlit{
+        margin: auto;
+        position: relative;
+        background-color: black;
+        width: 10px;
+        height: 80px;
+    }
+
+}
