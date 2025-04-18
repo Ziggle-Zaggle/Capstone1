@@ -69,13 +69,39 @@ class Card {
   
   
   function nextCard() {
-    currentIndex = (currentIndex + 1) % cards.length;
-    displayCard(); // respects showingFront
+    const card = document.getElementById("card");
+  
+    card.classList.add("slide-out-left");
+  
+    setTimeout(() => {
+      currentIndex = (currentIndex + 1) % cards.length;
+      displayCard();
+  
+      card.classList.remove("slide-out-left");
+      card.classList.add("slide-in-right");
+  
+      setTimeout(() => {
+        card.classList.remove("slide-in-right");
+      }, 300);
+    }, 300);
   }
   
   function prevCard() {
-    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-    displayCard(); // respects showingFront
+    const card = document.getElementById("card");
+  
+    card.classList.add("slide-out-right");
+  
+    setTimeout(() => {
+      currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+      displayCard();
+  
+      card.classList.remove("slide-out-right");
+      card.classList.add("slide-in-left");
+  
+      setTimeout(() => {
+        card.classList.remove("slide-in-left");
+      }, 300);
+    }, 300);
   }
 
   
