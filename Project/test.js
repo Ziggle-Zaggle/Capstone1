@@ -1,10 +1,19 @@
+var x="z"
+var y="z"
+var v="z"
+var L="z"
+var O="z"
+var num=0
+
+
+
 
 document.querySelector('#A1').addEventListener("click", function(){
    
+    x="A"
 
 
-    document.querySelector("#results1").textContent= "The Correct Answer is C, You are wrong"
-    document.querySelector("#selected1").textContent= "You Answered A"
+    document.querySelector("#selected1").textContent= x
 
 
 })
@@ -12,10 +21,10 @@ document.querySelector('#A1').addEventListener("click", function(){
 
 document.querySelector('#B1').addEventListener("click", function(){
    
+    x="B"
 
 
-    document.querySelector("#results1").textContent= "The Correct Answer is C, You are wrong"
-    document.querySelector("#selected1").textContent= "You Answered B"
+    document.querySelector("#selected1").textContent= x
 
 
 })
@@ -23,8 +32,8 @@ document.querySelector('#B1').addEventListener("click", function(){
 
 document.querySelector('#C1').addEventListener("click", function(){
    
-    document.querySelector("#results1").textContent= "The Correct Answer is C, You are right"
-    document.querySelector("#selected1").textContent= " You Answered C"
+    x="C"
+    document.querySelector("#selected1").textContent= x
 
 
 })
@@ -32,19 +41,22 @@ document.querySelector('#C1').addEventListener("click", function(){
 
 document.querySelector('#D1').addEventListener("click", function(){
    
-
-
-    document.querySelector("#results1").textContent= "The Correct Answer is C, You are wrong"
-    document.querySelector("#selected1").textContent= "You Answered D"
+    x="D"
+ 
+    document.querySelector("#selected1").textContent= x
 
 
 })
+
+
+
+
 document.querySelector('#A2').addEventListener("click", function(){
    
+    y="A"
 
 
-    document.querySelector("#results2").textContent= "The Correct Answer is B, You are wrong"
-    document.querySelector("#selected2").textContent= "You Answered A"
+    document.querySelector("#selected2").textContent= y
 
 
 })
@@ -52,10 +64,10 @@ document.querySelector('#A2').addEventListener("click", function(){
 
 document.querySelector('#B2').addEventListener("click", function(){
    
+    y="B"
 
 
-    document.querySelector("#results2").textContent= "The Correct Answer is B, You are Correct"
-    document.querySelector("#selected2").textContent= "You Answered B"
+    document.querySelector("#selected2").textContent= y
 
 
 })
@@ -63,8 +75,8 @@ document.querySelector('#B2').addEventListener("click", function(){
 
 document.querySelector('#C2').addEventListener("click", function(){
    
-    document.querySelector("#results2").textContent= "The Correct Answer is B,You are Wrong"
-    document.querySelector("#selected2").textContent= " You Answered C"
+    y="C"
+    document.querySelector("#selected2").textContent= y
 
 
 })
@@ -72,10 +84,40 @@ document.querySelector('#C2').addEventListener("click", function(){
 
 document.querySelector('#D2').addEventListener("click", function(){
    
+    y="D"
+ 
+    document.querySelector("#selected2").textContent= y
 
 
-    document.querySelector("#results2").textContent= "The Correct Answer is B, You are wrong"
-    document.querySelector("#selected2").textContent= "You Answered D"
+})
 
 
+
+
+
+
+
+
+document.querySelector('#submit').addEventListener("click", function(){
+   
+
+
+    if (x=="C") {
+        document.querySelector('#results1').textContent="you got it right!!!!"
+        num = num + 1
+       
+    } else {
+        document.querySelector('#results1').textContent="you got it wrong!!!!"
+
+
+    }
+    if (y=="B") {
+        document.querySelector('#results2').textContent="you got it right!!!!"
+        num = num + 1
+    } else {
+        document.querySelector('#results2').textContent="you got it wrong!!!!"
+
+
+    }
+    document.querySelector("#numright").textContent = num + "out of two"
 })
